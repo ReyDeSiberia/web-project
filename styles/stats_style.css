@@ -1,0 +1,135 @@
+body{
+    background="img/fon.jpg";
+    background-size:cover;
+    background-attachment:fixed;
+    font-family: Roboto;
+    color: rgba(0,99,99,0.95);
+    margin: auto;
+    width: 100%;
+    min-width: 1920px;
+    max-width: 2140px;
+    text-transform: uppercase;
+}
+
+
+/*Постоянная часть сайта: лого, название, клубы-участники*/
+#topheader{
+    padding: 10px;
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+	background-color: rgba(0,99,99,0.8);
+}
+
+.top_links{
+    font-size: 0.6em;
+}
+
+#pagename{
+/*    margin-top: 10px;*/
+    text-align: center;
+    color: rgba(51, 204, 204,0.8);
+	font-size: 1.8em;
+    letter-spacing: 3px;
+    width: 100%;
+    min-width: 1920px;
+}
+
+#bottomheader{
+	width: 100%;
+	text-align: center;
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.logo_clubs{
+    margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+    width: 3%
+}
+
+
+/*Таблица чемпионата*/
+#place_table{
+	text-align: center;
+	padding-top: 10px;
+    padding-bottom: 40px;
+	width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 25px;
+}
+
+#table{
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	font-size: 2.2em;
+    margin: auto;
+    width: 80%;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+
+table{
+	padding-top: 100px;
+	text-align: center;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td{
+	height: 80px;
+    width: auto;
+}
+
+/*Заголовки разделов*/
+h2{
+	font-size: 2.3em;
+    color: #fff;
+}
+
+#osnova{
+    margin-top: 40px;
+	background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.show_video{
+    font-size: 2em;
+    width: 35%;
+    color: #fff;
+    background-color: rgba(0,99,99,0.6);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); 
+    color: #fff;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+a:link{
+    color: rgba(51, 204, 204,0.8);
+    text-decoration: none;
+} 
+
+a:visited{
+    color: rgba(51, 204, 204,0.8);
+    text-decoration: none;
+} 
+
+a:active{
+    color: rgba(51, 204, 204,0.8);
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+}
+
+footer a:hover{
+    color: #FFF;
+    font-size: 1.2em;
+}
