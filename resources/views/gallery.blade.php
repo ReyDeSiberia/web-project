@@ -8,13 +8,10 @@
 </head>
 <body style="zoom: 67%" background="img/fon.jpg">
 	<div id="topheader">
-        <div id="pagename"><strong><a href="home_page.html">PREMIER LEAGUE</a></strong><br>
-            <span class='top_links'><a href="home_page.html#novosti">НОВОСТИ&emsp;</a></span>
-            <span class='top_links'><a href="home_page.html#table">ТАБЛИЦА&emsp;</a></span>
-            <span class='top_links'><a href="gallery.html">ГАЛЕРЕЯ&emsp;</a></span>
-            <span class='top_links'><a href="video.html">Видео&emsp;</a></span>
-            <span class='top_links'><a href="#connection">СВЯЗЬ&emsp;</a></span>
-            <span class='top_links'><a href="stats.html">Статистика</a></span>
+        <div id="pagename"><strong><a href="/">PREMIER LEAGUE</a></strong><br>
+            <span class='top_links'><a href="/gallery">ГАЛЕРЕЯ&emsp;</a></span>
+            <span class='top_links'><a href="/video">Видео&emsp;</a></span>
+            <span class='top_links'><a href="/stats">Статистика</a></span>
         </div>
 	</div>
 	
@@ -134,12 +131,10 @@
 </body>
 <footer>
    <p style="color: #aaa; font-size: 1.2em; line-height: 1.9em;">
-       <a href="home_page.html">главная&emsp;</a>
-       <a href="#novosti">новости&emsp;</a>
-       <a href="#table">таблица&emsp;</a>
-       <a href="gallery.html">галерея&emsp;</a>
-       <a href="video.html">видео&emsp;</a>
-       <a href="stats.html">статистика</a>
+       <a href="/">главная&emsp;</a>
+       <a href="/gallery">галерея&emsp;</a>
+       <a href="/video">видео&emsp;</a>
+       <a href="/stats">статистика</a>
    </p>
    <a name='connection'></a>
     <p style="color: #fff; text-transform: none;">e-mail: ostapchuksergey@bk.ru<br>
