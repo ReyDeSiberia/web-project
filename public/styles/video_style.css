@@ -1,7 +1,5 @@
 body{
-    background="img/fon.jpg";
-    background-size:cover;
-    background-attachment:fixed;
+    background-color: rgb(194,194,194);
     font-family: Roboto;
     color: rgba(0,99,99,0.95);
     margin: auto;

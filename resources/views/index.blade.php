@@ -1,11 +1,11 @@
 @extends('layouts.header')
 
 @section('content')
-   
+
     <div id="banner">
        <h1>ГЛАВНАЯ НОВОСТЬ</h1>
         <div name='novosti'>
-            <img src="img/news/news.jpg" style="width: 90%; margin-top: 20px; border-radius: 10px;"><br>
+            <img src="https://imgresizer.eurosport.com/unsafe/120x0/filters:format(webp):focal(789x752:791x750)/origin-imgresizer.eurosport.com/2020/05/30/2826178-58288588-2560-1440.jpg" style="width: 90%; margin-top: 20px; border-radius: 10px;"><br>
             <h1 style="font-family: Roboto;"><strong>АПЛ провела еще 1130 тестов на коронавирус – в лиге не осталось зараженных</strong></h1>
             <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7762865.shtml">
                 <div class="button_more">узнать больше</div>
@@ -267,108 +267,62 @@
             </table>
         </div>
 	</div>
-	
+
 	<div id="osnova">
 	    <a name="novosti"></a>
 		<div class="zagolovok"><h2>НОВОСТИ КЛУБОВ И ЛИГИ</h2></div>
 
-            <div class="row">  
-                <div class="column">
-                    <h3>17-летний игрок «Ливерпуля» Эллиотт отказался от встречи с Рамосом из-за эпизода с Салахом</h3>
-                    <img src="img/news/news1.jpg" class="news">
-                    <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7763830.shtml" target="_blank">
-                        <div class="button_more">узнать больше</div>
-                    </a>
-                </div>
-                <div class="overlay"></div>
-                <div class="column">
-                    <h3>«Дерьмо было везде». Сотрудник «МЮ» рассказал, как клубную раздевалку затопило из канализации</h3>
-                    <img src="img/news/news2.jpg" class="news">
-                    <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7763130.shtml" target="_blank">
-                        <div class="button_more">узнать больше</div>
-                    </a>
-                </div>
-                <div class="column">
-                    <h3>АПЛ опубликовала расписание первого тура после возобновления</h3>
-                    <img src="img/news/news3.jpg" class="news">
-                    <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7767334.shtml" target="_blank">
-                        <div class="button_more">узнать больше</div>
-                    </a>
-                </div>
-            </div>
-            
-            
-            
-            <div class="row">  
-                <div class="column">
-                    <h3>Варди с женой сгоняли в «МакАвто» на Bentley за 145 тыс евро</h3>
-                    <img src="img/news/news4.jpg" class="news">
-                    <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7768168.shtml" target="_blank">
-                        <div class="button_more">узнать больше</div>
-                    </a>
-                </div>
-                <div class="overlay"></div>
-                <div class="column">
-                    <h3>Зинченко: «С чемпионством «Ливерпуля» все смирились»</h3>
-                    <img src="img/news/news5.jpg" class="news">
-                    <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7766802.shtml" target="_blank">
-                        <div class="button_more">узнать больше</div>
-                    </a>
-                </div>
-                <div class="column">
-                    <h3>Абрамович купил самую дорогую виллу Израиля за 58 миллионов евро</h3>
-                    <img src="img/news/news6.jpg" class="news">
-                    <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7764568.shtml" target="_blank">
-                        <div class="button_more">узнать больше</div>
-                    </a>
-                </div>
-            </div>
-            
-            
-            
-            <div class="row">  
-                <div class="column">
-                    <h3>АПЛ вернется 17 июня матчами «Ман Сити» – «Арсенал» и «Астон Вилла» – «Шеффилд»</h3>
-                    <img src="img/news/news7.jpg" class="news">
-                    <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7760811.shtml" target="_blank">
-                        <div class="button_more">узнать больше</div>
-                    </a>
-                </div>
-                <div class="overlay"></div>
-                <div class="column">
-                    <h3>Mundo Deportivo: Коутиньо может вернуться в АПЛ. Игроком интересуются «Арсенал», «МЮ» и «Челси»</h3>
-                    <img src="img/news/news8.jpg" class="news">
-                    <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7760861.shtml" target="_blank">
-                        <div class="button_more">узнать больше</div>
-                    </a>
-                </div>
-                <div class="column">
-                    <h3>Manchester Evening News: «МЮ» взял 156 млн евро кредитов на трансферы</h3>
-                    <img src="img/news/news9.jpg" class="news">
-                    <a href="https://www.eurosport.ru/football/premier-league/2019-2020/story_sto7760341.shtml" target="_blank">
-                        <div class="button_more">узнать больше</div>
-                    </a>
-                </div>
-            </div>
-            
-            
+                @foreach($index as $index)
+                    <div class="place_new">
+                    <h3 style="color: #009090">{{$index -> title}}</h3>
+                    <p style="margin: 10px;">{{$index -> description}}</p>
+                    <img src="{{$index->img_url}}" class="news">
+                        <p><a href="{{$index->link_news}}">Узнать больше</a></p>
+                    </div>
+                @endforeach
+
+
+
             <a href="https://www.eurosport.ru/football/premier-league/" target="_blank">
                 <div class="button_news">перейти к главному источнику новостей</div>
             </a>
 	</div>
-	
 
-</body>
-<footer>
-   <p style="color: #aaa; font-size: 1.2em; line-height: 1.9em;">
-       <a href="/">главная&emsp;</a>
-       <a href="/gallery">галерея&emsp;</a>
-       <a href="/video">видео&emsp;</a>
-       <a href="/stats">статистика</a>
-   </p>
-   <a name='connection'></a>
-    <p style="color: #fff; text-transform: none;">e-mail: ostapchuksergey@bk.ru<br>
-    all rights reserved<br>
-    &copy; 2020</p>
+    <footer>
+
+        @if (!Auth::check())
+        <div>
+        <form method="get" action="/auth">
+            <div class="container">
+                <h1>Вход</h1>
+
+                <label><b>Логин</b></label>
+                <input type="text" placeholder="введите login" name="login"><br>
+
+                <label><b>Пароль</b></label>
+                <input type="password" placeholder="введите пароль" name="password"><br>
+
+                <button type="submit" class="registerbtn">Войти</button>
+            </div>
+            <div>
+                <span><a href="#">Забыли пароль?</a></span> | <span><a href="/reg">Регистрация</a></span>
+            </div>
+        </form>
+        @else
+                <a href="/logout"><h3>Выйти</h3></a>
+        @endif
+        </div>
+        <p style="font-size: 1.2em; line-height: 1.9em; color: ">
+            <a href="/" class="bottom_links">главная&emsp;</a>
+            <a href="/gallery" class="bottom_links">галерея&emsp;</a>
+            <a href="/video" class="bottom_links">видео&emsp;</a>
+            <a href="/stats" class="bottom_links">статистика</a>
+        </p>
+        <a name='connection'></a>
+        <p style="text-transform: none;">e-mail: ostapchuksergey@bk.ru<br>
+            all rights reserved<br>
+            &copy; 2020</p>
     </footer>
+</body>
+
 @endsection()

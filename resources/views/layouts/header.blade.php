@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/home_style.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/png">
 </head>
-<body style="zoom: 67%" background="img/fon.jpg">
+<body style="zoom: 67%">
 	<div id="topheader">
         <div id="pagename"><strong><a href="/">PREMIER LEAGUE</a></strong><br>
             <span class='top_links'><a href="/gallery">ГАЛЕРЕЯ&emsp;</a></span>
@@ -13,9 +13,9 @@
             <span class='top_links'><a href="/stats">Статистика</a></span>
         </div>
 	</div>
-	
+
 	<div style="height: 110px; background-color: rgba(0,0,0,0);"></div>
-	<div id="bottomheader">      
+	<div id="bottomheader">
 		<a href="https://www.manutd.com/" target="_blank"><img class="logo_clubs" src="img/logos/mu.png"></a>
 		<a href="https://www.tottenhamhotspur.com/" target="_blank"><img class="logo_clubs" src="img/logos/tottenham.png"></a>
 		<a href="https://www.arsenal.com/" target="_blank"><img class="logo_clubs" src="img/logos/arsenal.png"></a>
@@ -37,6 +37,10 @@
 		<a href="https://www.sufc.co.uk/" target="_blank"><img class="logo_clubs" src="img/logos/Sheffield.png"></a>
 		<a href="https://www.southamptonfc.com/" target="_blank"><img class="logo_clubs" src="img/logos/Southampton.png"></a>
 	</div>
+    <form method="get"  action="/search">
+        <input type="search" name="search_field" placeholder="Поиск по сайту" />
+        <input type="submit" value="Найти" />
+    </form>
 	@yield('content')
 </body>
 </html>
